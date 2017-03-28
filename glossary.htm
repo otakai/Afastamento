@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Project Glossary</title>
+<link href="./css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+  parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="16%" class="TableHeading">Item</td>
+			<td width="8%" class="TableHeading">Type</td>
+			<td width="76%" class="TableHeading">Meaning</td>
+		</tr>
+						<tr valign="top">
+				<td width="16%" class="TableRow">Categoria</td>
+				<td width="8%" class="TableRow">Negócio</td>
+				<td width="76%" class="TableRow">Indica a categoria do Trabalhador: "Professor" ou "Funcionário".</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Código do Trabalhador</td>
+				<td width="8%" class="TableRow">Técnico</td>
+				<td width="76%" class="TableRow">Identificador único do Trabalhador controlado pelo sistema.</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Data Final do Afastamento</td>
+				<td width="8%" class="TableRow">Negócio</td>
+				<td width="76%" class="TableRow">Data Final do Afastamento especificado pelo Trabalhador na Solicitação de Afastamento.</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Data Inicial do Afastamento</td>
+				<td width="8%" class="TableRow">Negócio</td>
+				<td width="76%" class="TableRow">Data Inicial do Afastamento especificado pelo Trabalhador na Solicitação de Afastamento.</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Motivo</td>
+				<td width="8%" class="TableRow">Negócio</td>
+				<td width="76%" class="TableRow">Define o motivo da Solicitação de Afastamento realizada pelo Trabalhador. Os Motivos podem ser: "Férias", "Licença Médica" ou "Viagem para participação em eventos".</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Solicitação de Afastamento</td>
+				<td width="8%" class="TableRow">Negócio</td>
+				<td width="76%" class="TableRow">Conjunto de informações que permite a um Trabalhador solicitar seu afastamento.</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Trabalhador</td>
+				<td width="8%" class="TableRow">Negócio</td>
+				<td width="76%" class="TableRow">Papel de qualquer pessoa que tenha sido contratada pela Faculdade e alocada numa de suas Escolas. Um Trabalhador pode ser subclassificado em Professor e Funcionário.</td>
+			</tr>
+</table><div class="pageFooter"></div>
+ 
+</body>
+</html>
