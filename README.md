@@ -1,0 +1,2 @@
+# afastamento
+Exemplo de Especificação
